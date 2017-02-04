@@ -1,5 +1,5 @@
-var express = require('express');
-var morgan = require('morgan');
+var express = require('express'); //Express is the library used to create a web server
+var morgan = require('morgan'); //Morgan is used to output logs that come to our server
 var path = require('path');
 
 var app = express();
@@ -22,3 +22,5 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+//In lines 8,12 and 16, a get request is made to the urls(hich contain either a link, image etc.). Once that url is obtained, the function is executed.
